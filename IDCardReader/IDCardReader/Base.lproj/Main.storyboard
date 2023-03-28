@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jw9-7J-MdV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ID Card Reader-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardReaderViewController" customModule="IDCardReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c4K-T0-Jdi">
+                                <rect key="frame" x="0.0" y="103" width="393" height="4"/>
+                            </progressView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXT-yt-AG9">
+                                <rect key="frame" x="144.66666666666666" y="137" width="103.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Read Card"/>
+                                <connections>
+                                    <action selector="readCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA4-wQ-2c3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-1g-hk6">
+                                <rect key="frame" x="196.66666666666666" y="154.66666666666666" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MFC-6t-3IX">
+                                <rect key="frame" x="0.0" y="180" width="393" height="638"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="aLM-Dp-9cO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="URw-Mh-DfY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mXT-yt-AG9" firstAttribute="top" secondItem="c4K-T0-Jdi" secondAttribute="bottom" constant="30" id="3wq-Nc-SQX"/>
+                            <constraint firstItem="c4K-T0-Jdi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BEn-SL-8yQ"/>
+                            <constraint firstItem="MFC-6t-3IX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ilg-Ce-U96"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4K-T0-Jdi" secondAttribute="trailing" id="K2r-CZ-dt9"/>
+                            <constraint firstItem="MFC-6t-3IX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SCT-eu-phy"/>
+                            <constraint firstItem="mXT-yt-AG9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VpC-cP-3xp"/>
+                            <constraint firstItem="c4K-T0-Jdi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Vs7-vh-T99"/>
+                            <constraint firstItem="tvm-1g-hk6" firstAttribute="centerY" secondItem="mXT-yt-AG9" secondAttribute="centerY" id="Y42-WR-TPZ"/>
+                            <constraint firstItem="tvm-1g-hk6" firstAttribute="centerX" secondItem="mXT-yt-AG9" secondAttribute="centerX" id="d2I-j1-Mc0"/>
+                            <constraint firstItem="MFC-6t-3IX" firstAttribute="top" secondItem="mXT-yt-AG9" secondAttribute="bottom" constant="8" symbolic="YES" id="tWW-dd-FsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MFC-6t-3IX" secondAttribute="bottom" id="zME-yE-u3l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ID Card Reader" id="0St-E4-y24"/>
+                    <connections>
+                        <outlet property="chooseIDButton" destination="mXT-yt-AG9" id="y9f-yb-UQG"/>
+                        <outlet property="progressLabel" destination="tvm-1g-hk6" id="LUX-tZ-SeA"/>
+                        <outlet property="progressView" destination="c4K-T0-Jdi" id="1rp-90-Bnq"/>
+                        <outlet property="tableView" destination="MFC-6t-3IX" id="ESN-mr-v6e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CCv-e6-e59">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jw9-7J-MdV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YdS-2D-jJj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bJn-6W-Ss8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxP-KH-Ewg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

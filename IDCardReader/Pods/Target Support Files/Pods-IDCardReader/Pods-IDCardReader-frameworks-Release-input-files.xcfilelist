@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-IDCardReader/Pods-IDCardReader-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DocumentReader/DocumentReader.framework/DocumentReader
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DocumentReaderFullRFID/DocumentReaderCore.framework/DocumentReaderCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/RegulaCommon/RegulaCommon.framework/RegulaCommon

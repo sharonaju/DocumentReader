@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37D47686A133D2E587FB657E /* Pods_IDCardReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514871A71619C3FA3AD2B41 /* Pods_IDCardReader.framework */; };
+		809229D029D33FD100144E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229CF29D33FD100144E37 /* AppDelegate.swift */; };
+		809229D429D33FD100144E37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229D329D33FD100144E37 /* ViewController.swift */; };
+		809229D729D33FD100144E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229D529D33FD100144E37 /* Main.storyboard */; };
+		809229D929D33FD100144E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809229D829D33FD100144E37 /* Assets.xcassets */; };
+		809229DC29D33FD100144E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229DA29D33FD100144E37 /* LaunchScreen.storyboard */; };
+		809229E429D3403600144E37 /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 809229E329D3403600144E37 /* regula.license */; };
+		809229EC29D3409E00144E37 /* CardReaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229E629D3409E00144E37 /* CardReaderPresenter.swift */; };
+		809229ED29D3409E00144E37 /* CardReaderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229E729D3409E00144E37 /* CardReaderWorker.swift */; };
+		809229EE29D3409E00144E37 /* CardReaderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229E829D3409E00144E37 /* CardReaderRouter.swift */; };
+		809229EF29D3409E00144E37 /* CardReaderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229E929D3409E00144E37 /* CardReaderModels.swift */; };
+		809229F029D3409E00144E37 /* CardReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229EA29D3409E00144E37 /* CardReaderViewController.swift */; };
+		809229F129D3409E00144E37 /* CardReaderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229EB29D3409E00144E37 /* CardReaderInteractor.swift */; };
+		809229F529D3412000144E37 /* StringResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229F329D3412000144E37 /* StringResultsTableViewCell.swift */; };
+		809229F629D3412000144E37 /* StringResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809229F429D3412000144E37 /* StringResultsTableViewCell.xib */; };
+		809229F929D3414F00144E37 /* DocumentImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229F729D3414F00144E37 /* DocumentImageTableViewCell.swift */; };
+		809229FA29D3414F00144E37 /* DocumentImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */; };
+		809229FD29D3417A00144E37 /* PortraitImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */; };
+		809229FE29D3417A00144E37 /* PortraitImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2514871A71619C3FA3AD2B41 /* Pods_IDCardReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDCardReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		809229CC29D33FD100144E37 /* IDCardReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDCardReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		809229CF29D33FD100144E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		809229D329D33FD100144E37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		809229D629D33FD100144E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		809229D829D33FD100144E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		809229DB29D33FD100144E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		809229DD29D33FD100144E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809229E329D3403600144E37 /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
+		809229E629D3409E00144E37 /* CardReaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderPresenter.swift; sourceTree = "<group>"; };
+		809229E729D3409E00144E37 /* CardReaderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderWorker.swift; sourceTree = "<group>"; };
+		809229E829D3409E00144E37 /* CardReaderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderRouter.swift; sourceTree = "<group>"; };
+		809229E929D3409E00144E37 /* CardReaderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderModels.swift; sourceTree = "<group>"; };
+		809229EA29D3409E00144E37 /* CardReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderViewController.swift; sourceTree = "<group>"; };
+		809229EB29D3409E00144E37 /* CardReaderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderInteractor.swift; sourceTree = "<group>"; };
+		809229F329D3412000144E37 /* StringResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringResultsTableViewCell.swift; sourceTree = "<group>"; };
+		809229F429D3412000144E37 /* StringResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringResultsTableViewCell.xib; sourceTree = "<group>"; };
+		809229F729D3414F00144E37 /* DocumentImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentImageTableViewCell.swift; sourceTree = "<group>"; };
+		809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentImageTableViewCell.xib; sourceTree = "<group>"; };
+		809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitImageTableViewCell.swift; sourceTree = "<group>"; };
+		809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortraitImageTableViewCell.xib; sourceTree = "<group>"; };
+		B80F20CE743566374AA4ED6D /* Pods-IDCardReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardReader.release.xcconfig"; path = "Target Support Files/Pods-IDCardReader/Pods-IDCardReader.release.xcconfig"; sourceTree = "<group>"; };
+		BB4FD2817F962FF44458698D /* Pods-IDCardReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardReader.debug.xcconfig"; path = "Target Support Files/Pods-IDCardReader/Pods-IDCardReader.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		809229C929D33FD100144E37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D47686A133D2E587FB657E /* Pods_IDCardReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CD3D6CA7204525C38F07386 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2514871A71619C3FA3AD2B41 /* Pods_IDCardReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		809229C329D33FD100144E37 = {
+			isa = PBXGroup;
+			children = (
+				809229CE29D33FD100144E37 /* IDCardReader */,
+				809229CD29D33FD100144E37 /* Products */,
+				F4C018A2F8B7C8FE6771C482 /* Pods */,
+				2CD3D6CA7204525C38F07386 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		809229CD29D33FD100144E37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				809229CC29D33FD100144E37 /* IDCardReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		809229CE29D33FD100144E37 /* IDCardReader */ = {
+			isa = PBXGroup;
+			children = (
+				809229E529D3407600144E37 /* CardReader */,
+				809229E329D3403600144E37 /* regula.license */,
+				809229CF29D33FD100144E37 /* AppDelegate.swift */,
+				809229D329D33FD100144E37 /* ViewController.swift */,
+				809229D529D33FD100144E37 /* Main.storyboard */,
+				809229D829D33FD100144E37 /* Assets.xcassets */,
+				809229DA29D33FD100144E37 /* LaunchScreen.storyboard */,
+				809229DD29D33FD100144E37 /* Info.plist */,
+			);
+			path = IDCardReader;
+			sourceTree = "<group>";
+		};
+		809229E529D3407600144E37 /* CardReader */ = {
+			isa = PBXGroup;
+			children = (
+				809229F229D340F300144E37 /* TableViewCells */,
+				809229E629D3409E00144E37 /* CardReaderPresenter.swift */,
+				809229E729D3409E00144E37 /* CardReaderWorker.swift */,
+				809229E829D3409E00144E37 /* CardReaderRouter.swift */,
+				809229E929D3409E00144E37 /* CardReaderModels.swift */,
+				809229EA29D3409E00144E37 /* CardReaderViewController.swift */,
+				809229EB29D3409E00144E37 /* CardReaderInteractor.swift */,
+			);
+			path = CardReader;
+			sourceTree = "<group>";
+		};
+		809229F229D340F300144E37 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				809229F329D3412000144E37 /* StringResultsTableViewCell.swift */,
+				809229F429D3412000144E37 /* StringResultsTableViewCell.xib */,
+				809229F729D3414F00144E37 /* DocumentImageTableViewCell.swift */,
+				809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */,
+				809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */,
+				809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F4C018A2F8B7C8FE6771C482 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB4FD2817F962FF44458698D /* Pods-IDCardReader.debug.xcconfig */,
+				B80F20CE743566374AA4ED6D /* Pods-IDCardReader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		809229CB29D33FD100144E37 /* IDCardReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 809229E029D33FD100144E37 /* Build configuration list for PBXNativeTarget "IDCardReader" */;
+			buildPhases = (
+				F580417FCCF93E933E95E5B4 /* [CP] Check Pods Manifest.lock */,
+				809229C829D33FD100144E37 /* Sources */,
+				809229C929D33FD100144E37 /* Frameworks */,
+				809229CA29D33FD100144E37 /* Resources */,
+				3A1BDF65FC4742F4AAE065F0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDCardReader;
+			productName = IDCardReader;
+			productReference = 809229CC29D33FD100144E37 /* IDCardReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		809229C429D33FD100144E37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					809229CB29D33FD100144E37 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 809229C729D33FD100144E37 /* Build configuration list for PBXProject "IDCardReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 809229C329D33FD100144E37;
+			productRefGroup = 809229CD29D33FD100144E37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				809229CB29D33FD100144E37 /* IDCardReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		809229CA29D33FD100144E37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809229F629D3412000144E37 /* StringResultsTableViewCell.xib in Resources */,
+				809229DC29D33FD100144E37 /* LaunchScreen.storyboard in Resources */,
+				809229FE29D3417A00144E37 /* PortraitImageTableViewCell.xib in Resources */,
+				809229D929D33FD100144E37 /* Assets.xcassets in Resources */,
+				809229D729D33FD100144E37 /* Main.storyboard in Resources */,
+				809229FA29D3414F00144E37 /* DocumentImageTableViewCell.xib in Resources */,
+				809229E429D3403600144E37 /* regula.license in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A1BDF65FC4742F4AAE065F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IDCardReader/Pods-IDCardReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IDCardReader/Pods-IDCardReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IDCardReader/Pods-IDCardReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F580417FCCF93E933E95E5B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDCardReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		809229C829D33FD100144E37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809229EE29D3409E00144E37 /* CardReaderRouter.swift in Sources */,
+				809229FD29D3417A00144E37 /* PortraitImageTableViewCell.swift in Sources */,
+				809229ED29D3409E00144E37 /* CardReaderWorker.swift in Sources */,
+				809229EC29D3409E00144E37 /* CardReaderPresenter.swift in Sources */,
+				809229F029D3409E00144E37 /* CardReaderViewController.swift in Sources */,
+				809229F929D3414F00144E37 /* DocumentImageTableViewCell.swift in Sources */,
+				809229D429D33FD100144E37 /* ViewController.swift in Sources */,
+				809229F529D3412000144E37 /* StringResultsTableViewCell.swift in Sources */,
+				809229F129D3409E00144E37 /* CardReaderInteractor.swift in Sources */,
+				809229EF29D3409E00144E37 /* CardReaderModels.swift in Sources */,
+				809229D029D33FD100144E37 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		809229D529D33FD100144E37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809229D629D33FD100144E37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		809229DA29D33FD100144E37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				809229DB29D33FD100144E37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		809229DE29D33FD100144E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		809229DF29D33FD100144E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		809229E129D33FD100144E37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4FD2817F962FF44458698D /* Pods-IDCardReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8QSU2T2BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IDCardReader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.molecule.IDCardReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		809229E229D33FD100144E37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80F20CE743566374AA4ED6D /* Pods-IDCardReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8QSU2T2BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IDCardReader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.molecule.IDCardReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		809229C729D33FD100144E37 /* Build configuration list for PBXProject "IDCardReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809229DE29D33FD100144E37 /* Debug */,
+				809229DF29D33FD100144E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		809229E029D33FD100144E37 /* Build configuration list for PBXNativeTarget "IDCardReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				809229E129D33FD100144E37 /* Debug */,
+				809229E229D33FD100144E37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 809229C429D33FD100144E37 /* Project object */;
+}
