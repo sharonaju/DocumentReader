@@ -22,7 +22,7 @@
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXT-yt-AG9">
                                 <rect key="frame" x="144.66666666666666" y="137" width="103.66666666666666" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Read Card"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Read Card"/>
                                 <connections>
                                     <action selector="readCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fA4-wQ-2c3"/>
                                 </connections>

@@ -86,6 +86,7 @@ class CardReaderViewController: UIViewController, CardReaderDisplayLogic
     {
         super.viewDidLoad()
         registerTableView()
+        LoadingIndicator.shared.showLoading()
         interactor?.initializeCardReader()
         
     }
@@ -94,6 +95,7 @@ class CardReaderViewController: UIViewController, CardReaderDisplayLogic
         tableView.register(UINib(nibName: "StringResultsTableViewCell", bundle: nil), forCellReuseIdentifier: StringResultsTableViewCell.reuseIdentifier)
         tableView.register(UINib(nibName: "DocumentImageTableViewCell", bundle: nil), forCellReuseIdentifier: DocumentImageTableViewCell.reuseIdentifier)
         tableView.register(UINib(nibName: "PortraitImageTableViewCell", bundle: nil), forCellReuseIdentifier: PortraitImageTableViewCell.reuseIdentifier)
+        tableView.register(UINib(nibName: "ClearDataTableViewCell", bundle: nil), forCellReuseIdentifier: ClearDataTableViewCell.reuseIdentifier)
         
     }
     func displayResults(results: [Any]) {
@@ -106,10 +108,12 @@ class CardReaderViewController: UIViewController, CardReaderDisplayLogic
         progressLabel.text = "Initializing..."
     }
     func initializationCompletedSuccessfully() {
+        LoadingIndicator.shared.hideLaoding()
         progressLabel.isHidden = true
         chooseIDButton.isHidden = false
     }
     func initializationFailed(errorMessage: String) {
+        LoadingIndicator.shared.hideLaoding()
         progressLabel.isHidden = false
         chooseIDButton.isHidden = true
         progressLabel.text = errorMessage
@@ -239,12 +243,27 @@ extension CardReaderViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.data = cellData
                 return cell
             }
+        case is ClearDataTableViewCellModel:
+            if let cellData = data as? ClearDataTableViewCellModel {
+                let cell = tableView.dequeueReusableCell(withIdentifier: ClearDataTableViewCell.reuseIdentifier, for: indexPath) as! ClearDataTableViewCell
+                cell.data = cellData
+                return cell
+            }
         default:
             return UITableViewCell()
         }
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = results[indexPath.row]
+        if data is ClearDataTableViewCellModel {
+            self.results.removeAll()
+            tableView.reloadData()
+        }
+        
+    }
+       
     
 }
 

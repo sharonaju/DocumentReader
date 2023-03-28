@@ -26,6 +26,11 @@
 		809229FA29D3414F00144E37 /* DocumentImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */; };
 		809229FD29D3417A00144E37 /* PortraitImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */; };
 		809229FE29D3417A00144E37 /* PortraitImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */; };
+		80922A0129D346ED00144E37 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80922A0029D346ED00144E37 /* LoadingView.swift */; };
+		80922A0329D3471C00144E37 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80922A0229D3471C00144E37 /* LoadingView.xib */; };
+		80922A0529D348B300144E37 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80922A0429D348B300144E37 /* LoadingIndicator.swift */; };
+		80922A0829D351DE00144E37 /* ClearDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80922A0629D351DE00144E37 /* ClearDataTableViewCell.swift */; };
+		80922A0929D351DE00144E37 /* ClearDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80922A0729D351DE00144E37 /* ClearDataTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,11 @@
 		809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentImageTableViewCell.xib; sourceTree = "<group>"; };
 		809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitImageTableViewCell.swift; sourceTree = "<group>"; };
 		809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortraitImageTableViewCell.xib; sourceTree = "<group>"; };
+		80922A0029D346ED00144E37 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		80922A0229D3471C00144E37 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		80922A0429D348B300144E37 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		80922A0629D351DE00144E37 /* ClearDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDataTableViewCell.swift; sourceTree = "<group>"; };
+		80922A0729D351DE00144E37 /* ClearDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClearDataTableViewCell.xib; sourceTree = "<group>"; };
 		B80F20CE743566374AA4ED6D /* Pods-IDCardReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardReader.release.xcconfig"; path = "Target Support Files/Pods-IDCardReader/Pods-IDCardReader.release.xcconfig"; sourceTree = "<group>"; };
 		BB4FD2817F962FF44458698D /* Pods-IDCardReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardReader.debug.xcconfig"; path = "Target Support Files/Pods-IDCardReader/Pods-IDCardReader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +105,7 @@
 		809229CE29D33FD100144E37 /* IDCardReader */ = {
 			isa = PBXGroup;
 			children = (
+				809229FF29D346D200144E37 /* Loader */,
 				809229E529D3407600144E37 /* CardReader */,
 				809229E329D3403600144E37 /* regula.license */,
 				809229CF29D33FD100144E37 /* AppDelegate.swift */,
@@ -130,8 +141,20 @@
 				809229F829D3414F00144E37 /* DocumentImageTableViewCell.xib */,
 				809229FB29D3417A00144E37 /* PortraitImageTableViewCell.swift */,
 				809229FC29D3417A00144E37 /* PortraitImageTableViewCell.xib */,
+				80922A0629D351DE00144E37 /* ClearDataTableViewCell.swift */,
+				80922A0729D351DE00144E37 /* ClearDataTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		809229FF29D346D200144E37 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				80922A0029D346ED00144E37 /* LoadingView.swift */,
+				80922A0229D3471C00144E37 /* LoadingView.xib */,
+				80922A0429D348B300144E37 /* LoadingIndicator.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		F4C018A2F8B7C8FE6771C482 /* Pods */ = {
@@ -204,11 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				809229F629D3412000144E37 /* StringResultsTableViewCell.xib in Resources */,
+				80922A0329D3471C00144E37 /* LoadingView.xib in Resources */,
 				809229DC29D33FD100144E37 /* LaunchScreen.storyboard in Resources */,
 				809229FE29D3417A00144E37 /* PortraitImageTableViewCell.xib in Resources */,
 				809229D929D33FD100144E37 /* Assets.xcassets in Resources */,
 				809229D729D33FD100144E37 /* Main.storyboard in Resources */,
 				809229FA29D3414F00144E37 /* DocumentImageTableViewCell.xib in Resources */,
+				80922A0929D351DE00144E37 /* ClearDataTableViewCell.xib in Resources */,
 				809229E429D3403600144E37 /* regula.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +292,11 @@
 				809229ED29D3409E00144E37 /* CardReaderWorker.swift in Sources */,
 				809229EC29D3409E00144E37 /* CardReaderPresenter.swift in Sources */,
 				809229F029D3409E00144E37 /* CardReaderViewController.swift in Sources */,
+				80922A0529D348B300144E37 /* LoadingIndicator.swift in Sources */,
+				80922A0129D346ED00144E37 /* LoadingView.swift in Sources */,
 				809229F929D3414F00144E37 /* DocumentImageTableViewCell.swift in Sources */,
 				809229D429D33FD100144E37 /* ViewController.swift in Sources */,
+				80922A0829D351DE00144E37 /* ClearDataTableViewCell.swift in Sources */,
 				809229F529D3412000144E37 /* StringResultsTableViewCell.swift in Sources */,
 				809229F129D3409E00144E37 /* CardReaderInteractor.swift in Sources */,
 				809229EF29D3409E00144E37 /* CardReaderModels.swift in Sources */,
@@ -423,6 +451,8 @@
 				DEVELOPMENT_TEAM = Z8QSU2T2BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IDCardReader/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ID Card Reader would like to access your Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ID Card Reader would like to access your gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -452,6 +482,8 @@
 				DEVELOPMENT_TEAM = Z8QSU2T2BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IDCardReader/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ID Card Reader would like to access your Camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ID Card Reader would like to access your gallery";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

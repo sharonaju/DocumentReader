@@ -46,6 +46,8 @@ class CardReaderInteractor: CardReaderBusinessLogic, CardReaderDataStore
                 data.append(stringResult)
             }
         }
+        let clearData = ClearDataTableViewCellModel(title: "Clear Details")
+        data.append(clearData)
         presenter?.displayResults(results: data)
     }
     
