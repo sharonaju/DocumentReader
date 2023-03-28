@@ -7,7 +7,7 @@
 		<key>DocumentReader.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>DocumentReaderFullRFID.xcscheme</key>
 		<dict>

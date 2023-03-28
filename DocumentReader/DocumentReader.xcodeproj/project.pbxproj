@@ -12,6 +12,7 @@
 		809229B529D29BD300144E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229B329D29BD300144E37 /* Main.storyboard */; };
 		809229B729D29BD300144E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809229B629D29BD300144E37 /* Assets.xcassets */; };
 		809229BA29D29BD300144E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229B829D29BD300144E37 /* LaunchScreen.storyboard */; };
+		809229C229D29D5F00144E37 /* regula.license in Resources */ = {isa = PBXBuildFile; fileRef = 809229C129D29D5F00144E37 /* regula.license */; };
 		D7CD445D5E51DB91BBC33043 /* Pods_DocumentReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2851C6D05D9176C4848080 /* Pods_DocumentReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		809229B629D29BD300144E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809229B929D29BD300144E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809229BB29D29BD300144E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809229C129D29D5F00144E37 /* regula.license */ = {isa = PBXFileReference; lastKnownFileType = file; path = regula.license; sourceTree = "<group>"; };
 		DC4AEF84446F0F8B9F718312 /* Pods-DocumentReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReader.release.xcconfig"; path = "Target Support Files/Pods-DocumentReader/Pods-DocumentReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +56,6 @@
 				7A27054330E38C890DECC474 /* Pods-DocumentReader.debug.xcconfig */,
 				DC4AEF84446F0F8B9F718312 /* Pods-DocumentReader.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 		809229AC29D29BD300144E37 /* DocumentReader */ = {
 			isa = PBXGroup;
 			children = (
+				809229C129D29D5F00144E37 /* regula.license */,
 				809229AD29D29BD300144E37 /* AppDelegate.swift */,
 				809229B129D29BD300144E37 /* ViewController.swift */,
 				809229B329D29BD300144E37 /* Main.storyboard */,
@@ -152,6 +154,7 @@
 				809229BA29D29BD300144E37 /* LaunchScreen.storyboard in Resources */,
 				809229B729D29BD300144E37 /* Assets.xcassets in Resources */,
 				809229B529D29BD300144E37 /* Main.storyboard in Resources */,
+				809229C229D29D5F00144E37 /* regula.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
