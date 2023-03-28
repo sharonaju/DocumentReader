@@ -1,0 +1,24 @@
+PODS:
+  - DocumentReader (6.7.2863):
+    - RegulaCommon (= 6.7.265)
+  - DocumentReaderFullRFID (6.7.7286)
+  - RegulaCommon (6.7.265)
+
+DEPENDENCIES:
+  - DocumentReader
+  - DocumentReaderFullRFID
+
+SPEC REPOS:
+  trunk:
+    - DocumentReader
+    - DocumentReaderFullRFID
+    - RegulaCommon
+
+SPEC CHECKSUMS:
+  DocumentReader: 8166e13282a114dad33b0de12f26138b310f1165
+  DocumentReaderFullRFID: 78e78e439b5abc2b83a4ae3a547292e9c3b878da
+  RegulaCommon: 48ca5b920a2e9deee6a67850bfc990d3dcdd5577
+
+PODFILE CHECKSUM: 4d4a163531b7911d8399c8cda7649dcd12f3f7dc
+
+COCOAPODS: 1.11.3

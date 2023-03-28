@@ -12,9 +12,12 @@
 		809229B529D29BD300144E37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229B329D29BD300144E37 /* Main.storyboard */; };
 		809229B729D29BD300144E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809229B629D29BD300144E37 /* Assets.xcassets */; };
 		809229BA29D29BD300144E37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809229B829D29BD300144E37 /* LaunchScreen.storyboard */; };
+		D7CD445D5E51DB91BBC33043 /* Pods_DocumentReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2851C6D05D9176C4848080 /* Pods_DocumentReader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2851C6D05D9176C4848080 /* Pods_DocumentReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DocumentReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A27054330E38C890DECC474 /* Pods-DocumentReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReader.debug.xcconfig"; path = "Target Support Files/Pods-DocumentReader/Pods-DocumentReader.debug.xcconfig"; sourceTree = "<group>"; };
 		809229AA29D29BD300144E37 /* DocumentReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809229AD29D29BD300144E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809229B129D29BD300144E37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		809229B629D29BD300144E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809229B929D29BD300144E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809229BB29D29BD300144E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC4AEF84446F0F8B9F718312 /* Pods-DocumentReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DocumentReader.release.xcconfig"; path = "Target Support Files/Pods-DocumentReader/Pods-DocumentReader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CD445D5E51DB91BBC33043 /* Pods_DocumentReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2461612CBC2ED910B91AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E2851C6D05D9176C4848080 /* Pods_DocumentReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14EAF82D152BE22E5C66B312 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A27054330E38C890DECC474 /* Pods-DocumentReader.debug.xcconfig */,
+				DC4AEF84446F0F8B9F718312 /* Pods-DocumentReader.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		809229A129D29BD200144E37 = {
 			isa = PBXGroup;
 			children = (
 				809229AC29D29BD300144E37 /* DocumentReader */,
 				809229AB29D29BD300144E37 /* Products */,
+				14EAF82D152BE22E5C66B312 /* Pods */,
+				0C2461612CBC2ED910B91AE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 809229BE29D29BD300144E37 /* Build configuration list for PBXNativeTarget "DocumentReader" */;
 			buildPhases = (
+				3E08A84D7F8F13B8F5E7DA7F /* [CP] Check Pods Manifest.lock */,
 				809229A629D29BD300144E37 /* Sources */,
 				809229A729D29BD300144E37 /* Frameworks */,
 				809229A829D29BD300144E37 /* Resources */,
+				79CD201BC3E0307668BC590F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E08A84D7F8F13B8F5E7DA7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DocumentReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79CD201BC3E0307668BC590F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocumentReader/Pods-DocumentReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DocumentReader/Pods-DocumentReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DocumentReader/Pods-DocumentReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		809229A629D29BD300144E37 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		809229BF29D29BD300144E37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A27054330E38C890DECC474 /* Pods-DocumentReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		809229C029D29BD300144E37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4AEF84446F0F8B9F718312 /* Pods-DocumentReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
